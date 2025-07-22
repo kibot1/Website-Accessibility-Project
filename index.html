@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Webpage</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <header>
+        <a href="#" class="logo"><i class="bx bxs-universal-access"> </i>Website Accessibility</a>
+
+
+
+        <!-- Nav List -->
+        <ul class="navbar">
+            <li><a href="#home">Importance</a></li>
+            <li><a href="#implement">How To Implement</a></li>
+            <li><a href="#WCAG">WCAG Principles</a></li>
+        </ul>
+
+    </header>
+
+    <main>
+        <h1>Designing Website Accessibility</h1>
+        <hr>
+        <h2 class="sub-title" id="home">Why Is Website Accessibility Important?</h2>
+    </main>
+
+    <!-- Home -->
+    <section class="home swiper">
+        <div class="swiper-wrapper">
+
+            <!-- slide 1 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>Inclusivity/Equal Access</span>
+                    <h3>About 1 in 6 people in the world have a disability.
+                    Accessibility ensures equal opportunities to interact with content, make purchases, apply for jobs, or access education online.
+                </div>
+                <img src="img/inclusion.png" class="hide-on-small-screen" alt="image of people around a table all being able to access the internet">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>Legal Compliance</span>
+                    <h3>Many countries have laws(like the Americans with Disabilities Act (ADA) in the U.S.) requiring digital accessibility</h3>
+                </div>
+                <img src="img/legal_compliance.jpg" class="hide-on-small-screen" alt="image representing following legal compliance">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>Better User Experience</span>
+                    <h3>Accessibility improvements such as added keyboard shortcuts, readable fonts,and alt texts provide a cleaner and more intuitive design making it easier to navigate for everyone</h3>
+                </div>
+                <img src="img/user_experience.jpg" class="hide-on-small-screen" alt="image showing a range of emotions for how people feel about the user Experience">
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>Improved SEO</span>
+                    <h3>semantic HTML, proper alt text, and structure content improve Crawlability and how easy extensions such as text readers can understand a websites information</h3>
+                </div>
+                <img src="img/boostseo.jpg" class="hide-on-small-screen" alt="image suggesting improving SEO">
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- making a website accessible -->
+    <section class="wrapper" id="implement">
+        <h2 class="sub-title">Making a Website Accessible</h2>
+        <div class="list">
+            <ol>
+                <li class="title">ALT Text</li>
+                <p>Alt text is a written description of an image that screen readers can read out loud. This allows for
+                visually impaired individuals to be able to understand the content on a website. Adding alt text in html is also best practice
+                for if images and other non text is not able to load, the alt text is shown instead to still provide context as to what was supposed to appear</p>
+
+                <p>Ex: an image of a dog and the alt text shown when the image doesn't load</p>
+                <img src="img/dog.jpg" alt="A dog in a field of flowers" width="200">
+                <img src="dog.jpg" alt="A dog in a field of flowers" width="200">
+                <hr>
+
+                <li class="title">Captions</li>
+                <p>Captions for all video media allows for people with any form of hearing impairment too still be able to understand what is being said
+                </p>
+                <p>Ex: click on the three little dots at the bottom of the video and you can turn on captions</p>
+                <video width="520" height="440" controls>
+                    <source src="videos/minute_talk.mp4" type="video/mp4">
+                    <track kind="captions" src="captions.vtt" srclang="en" label="English">
+                    <p>Here is a <a href="videos/minute-talk.mp4">link to download </a> the video.</p>
+                </video>
+                <hr>
+
+                <li class="title">Simple Design/layout</li>
+                <p>Designing a website that is easy to navigate and understand makes it easier for everyone to travers the website and find the content they are looking for</p>
+                <hr>
+
+                <li class="title">Contrast</li>
+                <p>Contrast is important to make it easy for people to be able to see text on the screen. For all and specially people with visual impairments a bad contrast makes it hard to read
+                 content on a page. A contrast ratio of at least 4.5:1 is required to meet the WCAG standards</p>
+                <p>Ex: This section of the page meets the contrast standards</p>
+                <img src="img/contrast_ratio.png" alt="image showing contrast ratio of this section of the page">
+            </ol>
+
+        </div>
+    </section>
+
+    <section class="last_section" id="WCAG">
+        <hr>
+        <h2 class="sub-title">WCAG Principles</h2>
+        <p>WCAG is a set of internationally recognized standards for making digital content accessible to people with disabilities.
+        Although the WCAG standards are not explicitly mentioned in the (ADA) following WCAG is common practice and recommended to ensure legal compliance with the law</p>
+
+        <h2 class="title">WCAG Principles</h2>
+
+        <ul class="principles">
+            <li class="box">Perceivable:<h5>Content must be presented in ways that all users can sense, regardless of ability. This means providing text alternatives for images, captions for videos, and ensuring content is adaptable for different devices and assistive technologies.
+                The goal is to make sure no information is hidden from users due to sensory limitations.</h5></li>
+            <li class="box">Operable:<h5>Users must be able to interact with all website functions, no matter how they navigate. This includes keyboard access, giving users enough time to read or interact, and avoiding content that could trigger seizures.
+                Navigation should also be clear and consistent to help all users, including those with motor or cognitive challenges.</h5></li>
+        </ul>
+
+        <ul class="principles">
+            <li class="box">Understandable:<h5>Websites should be easy to read and operate. Content must use clear language, instructions should be provided when needed, and interactions like forms should behave predictably.
+                This ensures users can follow and use the site effectively without confusion.</h5></li>
+            <li class="box">Robust:<h5>Content should work across a wide range of devices and assistive tools. This means using clean, standard code so technologies like screen readers can interpret content correctly.
+                Following this principle helps websites remain accessible as technology changes.</h5></li>
+        </ul>
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
